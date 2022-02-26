@@ -1,0 +1,456 @@
+/* Imports */
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100;300;400;600;900&display=swap');
+
+/* Box Model Hack */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+
+/* Variables */
+:root {
+    --primary-100: hsl(240, 17%, 98%);
+    --primary-500: hsl(222, 4%, 51%);
+    --primary-800: hsl(219, 23%, 26%);
+    --primary-900: hsl(219, 26%, 17%);
+}
+
+/* Base Styles */
+html {
+    font-family: 'Fira Sans', sans-serif;
+    line-height: 1.5rem;
+    color: var(--primary-500);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 400;
+    color: var(--primary-900);
+    line-height: 2rem;
+    margin: 1rem 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Header */
+.hero {
+    background: var(--primary-900);
+    background:
+        radial-gradient(farthest-corner at 70% 35%, var(--primary-800) 0%, var(--primary-900) 100%),
+        linear-gradient(176.5deg, transparent 72.9%, var(--primary-100) 73%, var(--primary-100) 100%);
+    background-blend-mode: screen;
+}
+
+.hero section {
+    float: left;
+    margin-top: 3rem;
+}
+
+.hero span {
+    color: var(--primary-100);
+}
+
+.hero ul {
+    list-style: none;
+}
+
+.hero li {
+    display: inline;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    margin: 0 2rem;
+}
+
+.hero a:visited {
+    color: var(--primary-100);
+}
+
+.hero .logo {
+    margin-left: 6rem;
+}
+
+.hero .right {
+    float: right;
+    margin: 0;
+    padding: 0;
+}
+
+.btn {
+    padding: 0.75rem 2rem;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+}
+
+.hero .btn {
+    margin-right: 2rem;
+}
+
+.md-blue {
+    background: var(--primary-500);
+    color: var(--primary-100);
+}
+
+.hero h1 {
+    color: var(--primary-100);
+    line-height: 3rem;
+    padding-right: 6rem;
+}
+
+.hero-cont {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.hero-cont > * {
+    width: 50%;
+    float: left;
+}
+
+.white {
+    background: var(--primary-100);
+    color: var(--primary-900);
+}
+
+.hero-left .btn {
+    margin-right: 1.5rem;
+}
+
+.hero-left p {
+    margin-bottom: 1rem;
+    margin-right: 4rem;
+}
+
+.hero-right {
+    background: var(--primary-100);
+    padding: 2rem;
+    border-radius: 25px;
+    box-shadow: 1px 10px 5px -5px hsl(242, 64%, 91%);
+}
+
+.hero-right .img-cont {
+    background: var(--primary-500);
+    margin: 0;
+    padding: 2rem;
+    text-align: center;
+}
+
+.img-cont img {
+    width: 50%;
+    margin: 5rem;
+}
+
+/* Projects */
+.projects {
+    background: #f8f8fa;
+    text-align: right;
+}
+
+.projects img {
+    width: 10%;
+    padding: 5rem 2rem;
+}
+
+/* How */
+.how {
+    width: 80%;
+    margin: 0 auto;
+}
+.how > * {
+    width: 50%;
+    float: left;
+}
+
+.description {
+    padding-right: 3rem;
+}
+
+span {
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.description p {
+    margin-bottom: 1rem;
+}
+
+.description p + p {
+    margin-bottom: 5rem;
+}
+
+.dk-blue {
+    background: var(--primary-900);
+    color: var(--primary-100);
+    box-shadow: 5px 5px 10px 1px #00000025;
+}
+
+.how-car-cont {
+    padding: 3rem;
+}
+
+.how-card {
+    width: 40%;
+    float: left;
+    padding: 1rem 0;
+    text-align: center;
+    box-shadow: 5px 5px 10px #00000025;
+    margin: 0 1rem 1rem;
+}
+
+.how-card section + section {
+    padding: 0 1rem;
+    height: 7rem;
+}
+
+.how-card h3 {
+    font-size: 0.95rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.how-card p {
+    font-size: 0.90rem;
+}
+
+.how-card img {
+    width: 100%;
+    
+}
+/* Difference */
+.difference {
+    clear: both;
+    width: 80%;
+    margin: 0 auto;
+    padding: 10rem 0;
+}
+
+.difference > .container > * {
+    width: 50%;
+    float: left;
+}
+
+.diff-right p {
+    margin: 1rem 0;
+}
+
+.diff-right p + p {
+    margin-bottom: 5rem;
+}
+
+/* How Work */
+.how-work {
+    clear: both;
+    width: 80%;
+    margin: 0 auto;
+    padding: 5rem 0;
+    text-align: center;
+}
+
+/* Account */
+.account {
+    width: 80%;
+    margin: 5rem auto;
+}
+
+.account > section > * {
+    width: 50%;
+    float: left;
+}
+
+.account .box {
+    color: var(--primary-900);
+    float: left;
+}
+
+.account-right > section {
+    padding: 2rem 0;
+}
+
+.account h3 {
+    font-size: 0.95rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 0;
+}
+/* How Btn */
+.how-btn {
+    clear: both;
+    text-align: center;
+    padding: 5rem 0;
+}
+
+/* Core Features */
+.core-features {
+    background: var(--primary-900);
+    background:
+        radial-gradient(farthest-corner at 0 0, var(--primary-800) 0%, var(--primary-900) 5%),
+        linear-gradient(355deg, transparent 80%, var(--primary-100) 80.1%, var(--primary-100) 100%);
+    background-blend-mode: screen;
+}
+
+.core-features > * {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.core-title {
+    width: 20%;
+    padding-bottom: 5rem;
+}
+
+.core-bottom {
+    margin: 5rem inherit;
+    padding: 5rem 0;
+}
+
+.core-bottom > * {
+    float: left;
+    width: 30%;
+    height: 15rem;
+}
+
+.core-card {
+    background: var(--primary-100);
+    margin: 1rem;
+    border-radius: 5px;
+    padding: 1rem;
+}
+
+.core-card h3 {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.core-card p {
+    font-size: .9rem;
+}
+
+/* Standpoint */
+.standpoint {
+    clear: both;
+    width: 80%;
+    margin: 5rem auto;
+}
+
+.standpoint-cont > * {
+    width: 50%;
+    float: left;
+}
+
+.standpoint-cont p {
+    margin: 1rem 0;
+}
+
+.standpoint-cont p + p {
+    margin-bottom: 5rem;
+}
+
+/* carousel */
+.carousel {
+    clear: both;
+    width: 80%;
+    margin: 0 auto;
+    padding: 7rem 0;
+    text-align: center;
+}
+
+.left-arrow, .right-arrow {
+    width: 10%;
+    float: left;
+}
+
+.review {
+    width: 80%;
+    float: left;
+}
+
+.rev-auth-cont {
+    width: 30%;
+    margin: 3rem auto;
+}
+.rev-img {
+    float: left;
+}
+
+.rev-img img {
+    width: 75%;
+}
+
+.rev-auth >  {
+    float: left;
+}
+
+/* Order Now */
+.order-now {
+    clear:both;
+    background: radial-gradient(farthest-corner at 0 0, var(--primary-800) 0%, var(--primary-900) 5%);
+}
+
+.order-now .container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.order-now .container > * {
+    float: left;
+    width: 50%;
+}
+
+.order-now .container h2 {
+    color: var(--primary-100);
+    padding-bottom: 1rem;
+}
+
+.container .buttons {
+    padding: 1rem;
+}
+
+/* footer */
+footer {
+    margin: 3rem 5rem;
+}
+
+footer span {
+    text-transform: uppercase;
+    color: var(--primary-900);
+}
+
+footer > .container > * {
+    width: 20%;
+    float: left;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer .boxs section * {
+    color: var(--primary-300);
+}
+
+footer .boxs * {
+    Display: inline-block;
+}
+
+footer .boxs {
+    margin: 1rem 0;
+}
